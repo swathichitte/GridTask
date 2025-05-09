@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grid Layout</title>
+  <style>
+    .parent {
+      background-color: chartreuse;
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-areas:
+        "one one one one one one"
+        "two three four five six six"
+        "two seven seven five eight nine "
+        "ten ten ten ten ten ten";
+    }
+
+    .child {
+      background-color: brown;
+      color: white;
+      
+    }
+
+    .child1 { grid-area: one; }
+    .child2 { grid-area: two; }
+    .child3 { grid-area: three; }
+    .child4 { grid-area: four; }
+    .child5 { grid-area: five; }
+    .child6 { grid-area: six; }
+    .child7 { grid-area: seven; }
+    .child8 { grid-area: eight; }
+    .child9 { grid-area: nine; }
+    .child10 { grid-area: ten; }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child child1">Nav</div>
+    <div class="child child2">Aside</div>
+    <div class="child child3">some1</div>
+    <div class="child child4">some2</div>
+    <div class="child child5">Header</div>
+    <div class="child child6">Article</div>
+    <div class="child child7">Blog</div>
+    <div class="child child8">some3</div>
+    <div class="child child9">some4</div>
+    <div class="child child10">Footer</div>
+  </div>
+</body>
+</html>
